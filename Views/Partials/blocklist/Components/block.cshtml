@@ -1,0 +1,9 @@
+﻿@using Packagetest.Model
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockListItem<Block>>
+@{
+
+}
+
+@await Html.GetBlockListHtmlAsync(Model.Content.Blocklistnested)
+<h1>test</h1>
